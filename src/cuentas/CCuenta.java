@@ -1,47 +1,34 @@
 package cuentas;
 
 
-// TODO: Auto-generated Javadoc
 /**
- * Esta clase se encarga de crear y gestionar cuentas bancarias.
- *
+ * Esta clase se encarga de crear y gestionar cuentas bancarias
  * @author Juan Marí Ibáñez
  * @version 1.0
  * @since 01.12.2022
+ *
  */
 
 public class CCuenta {
 
-/**
- * Campos de clase.
- *
- * @field nombre  hace referencia al nombre del titular
- * @field cuenta  hace referencia a los caractere que identifican la cuenta del titular
- * @field saldo  hace referencia al saldo de la cuenta
- * @field tipoInterés hace referencia al interés generado por el saldo de la cuenta
- */
-
+    /**almacena nombre cliente*/
     private String nombre;
     
-    /** The cuenta. */
+    /**almacena número de cuenta*/
     private String cuenta;
-    
-    /** The saldo. */
+    /**almacena saldo de la cuenta*/
     private double saldo;
-    
-    /** The tipo interés. */
+    /**establece tipo de interés de la cuenta*/
     private double tipoInterés;
-
 /**
- * constructor por defecto.
+ * constructor por defecto
  */
     public CCuenta()
     {
     }
 
  /**
-  * constructor con parámetros encapsulados.
-  *
+  * constructor con parámetros encapsulados
   * @param nom - cadena de texto con nombre de titular de la cuenta
   * @param cue - cadena de texto con caracteres de la cuenta
   * @param sal - número decimal con saldo disponible en la cuenta
@@ -56,8 +43,7 @@ public class CCuenta {
     }
     
     /**
-     * devuelve el saldo de la cuenta a través del método getSaldo() .
-     *
+     * devuelve el saldo de la cuenta a través del método getSaldo() 
      * @return getSaldo()
      */
 
@@ -67,8 +53,7 @@ public class CCuenta {
     }
     
 /**
- * El metodo ingresar gestiona los ingresos de cantidades positivas en la cuenta.
- *
+ * El metodo ingresar gestiona los ingresos de cantidades positivas en la cuenta
  * @param cantidad - cantidad que se va a añadir al saldo
  * @throws Exception si la cantidad es negativa
  */
@@ -81,9 +66,9 @@ public class CCuenta {
     
     
 /**
- * El método retirar gestiona las retiradas de cantidades positivas de la cuenta.
- *
+ * El método retirar gestiona las retiradas de cantidades positivas de la cuenta
  * @param cantidad - cantidad que se va a restar al saldo
+ * @throws Exception si la cantidad es negativa
  * @throws Exception si no existe suficiente saldo en la cuenta
  */
     public void retirar(double cantidad) throws Exception
@@ -96,8 +81,7 @@ public class CCuenta {
     }
     
 /**
- * Método getter - devuelve valor almacenado en campo nombre.
- *
+ * Método getter
  * @return nombre
  */
 	private String getNombre() {
@@ -105,17 +89,15 @@ public class CCuenta {
 	}
 
 /**
- * Método setter - almacena nombre recibido por parametro en campo nombre.
- *
- * @param nombre the new nombre
+ * Método setter 
+ * @param nombre almacena nombre recibido por parametro en campo nombre
  */
 	private void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
 /**
- * Método getter - devuelve valor almacenado en campo cuenta.
- *
+ * Método getter 
  * @return cuenta
  */
 	private String getCuenta() {
@@ -123,17 +105,15 @@ public class CCuenta {
 	}
 
 /**
- * Método setter - almacena cuenta recibida por parametro en campo cuenta.
- *
- * @param cuenta the new cuenta
+ * Método setter 
+ * @param cuenta almacena cuenta recibida por parametro en campo cuenta
  */
 	private void setCuenta(String cuenta) {
 		this.cuenta = cuenta;
 	}
 
 /**
- * Método getter - devuelve saldo almacenado en campo saldo.
- *
+ * Método getter 
  * @return saldo
  */
 	private double getSaldo() {
@@ -141,17 +121,15 @@ public class CCuenta {
 	}
 
 /**
- * Método setter - almacena saldo recibido por parámetro en campo saldo.
- *
- * @param saldo the new saldo
+ * Método setter 
+ * @param saldo almacena saldo recibido por parámetro en campo saldo
  */
 	private void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
 
 /**
- * Método getter - devuelve tipo de interés almacenado en campo tipoInterés.
- *
+ * Método getter
  * @return tipoInteres
  */
 	private double getTipoInterés() {
@@ -159,9 +137,8 @@ public class CCuenta {
 	}
 
 /**
- * Método setter - almacena tipo de interes recibido por parametro en campo tipoInterés.
- *
- * @param tipoInterés the new tipo interés
+ * Método setter  
+ * @param tipoInterés almacena tipo de interes recibido por parametro en campo tipoInterés
  */
 	private void setTipoInterés(double tipoInterés) {
 		this.tipoInterés = tipoInterés;
